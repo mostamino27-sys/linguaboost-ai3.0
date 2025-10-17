@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>منصة LinguaBoost AI 3.0</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/logo.png">
+  <style>
+    body { text-align: right; direction: rtl; }
+    textarea { direction: rtl; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>منصة LinguaBoost AI 3.0</h1>
+    <p class="subtitle">تحليل لغوي وذكاء اصطناعي متعدد اللغات</p>
+    <nav>
+      <button onclick="changeLang('fr')">FR</button>
+      <button onclick="changeLang('ar')">AR</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="input-section">
+      <h2>أدخل النص هنا</h2>
+      <textarea id="userText" placeholder="اكتب النص للتحليل..."></textarea>
+      <div class="buttons">
+        <button onclick="analyzeText()">تحليل</button>
+        <button onclick="checkPlagiat()">كشف الانتحال</button>
+        <button onclick="clearText()">مسح</button>
+      </div>
+    </section>
+
+    <section class="output-section">
+      <h2>النتائج</h2>
+      <div id="analysisResult">ستظهر النتائج هنا...</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 LinguaBoost AI — تطوير: BETTAHAR Abdelkrim</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
