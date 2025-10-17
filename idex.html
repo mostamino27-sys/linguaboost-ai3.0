@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinguaBoost AI 3.0</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/logo.png">
+</head>
+<body>
+  <header>
+    <h1>LinguaBoost AI 3.0</h1>
+    <p class="subtitle">Plateforme d'analyse linguistique intelligente</p>
+    <nav>
+      <button onclick="changeLang('fr')">FR</button>
+      <button onclick="changeLang('ar')">AR</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="input-section">
+      <h2>Analyse linguistique</h2>
+      <textarea id="userText" placeholder="Écrivez votre texte ici..."></textarea>
+      <div class="buttons">
+        <button onclick="analyzeText()">Analyser</button>
+        <button onclick="checkPlagiat()">Vérifier le plagiat</button>
+        <button onclick="clearText()">Effacer</button>
+      </div>
+    </section>
+
+    <section class="output-section">
+      <h2>Résultats</h2>
+      <div id="analysisResult">Les résultats apparaîtront ici...</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 LinguaBoost AI — Développé par BETTAHAR Abdelkrim</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
